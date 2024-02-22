@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body id="body">
+    <div id="root"></div>
+    <script>
+      var container = React.createElement(
+        "div",
+        null,
+        React.createElement("h1", null, "React h1 Element")
+      ); // <div><h1> -----</h1></div>
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

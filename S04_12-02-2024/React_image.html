@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <script>
+      var imgRef = React.createElement("img", {
+        src: "https://th.bing.com/th/id/R.e12e201bd6da8fc34dff4b23a51a26b5?rik=aG%2fF6caj%2fF3QLQ&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2flamborghini-aventador-s-roadster-2019-4k-ok.jpg&ehk=Bu7cHBWGnNZrK5%2fvgeYNlTME3UfOvvhPzMQEL3b9Ko4%3d&risl=1&pid=ImgRaw&r=0",
+        width: "500",
+        height: "300",
+        alt: "Car Image",
+      }); // <img />
+
+      ReactDOM.render(imgRef, document.querySelector("body"));
+    </script>
+  </body>
+</html>

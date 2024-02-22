@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeConten() {
+        var h2Ref = document.querySelector("h2");
+        h2Ref.innerText = "Javascript Document";
+        h2Ref.style.color = "red";
+      }
+
+      function createDOMElement() {
+        var pRef = document.createElement("p");
+        pRef.innerText = "This is my new Para";
+
+        document.querySelector("body").appendChild(pRef);
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title" name="" clas="">HTML document</h2>
+    <button onclick="changeConten()">Change Content</button>
+    <button onclick="createDOMElement()">Add Para</button>
+  </body>
+</html>

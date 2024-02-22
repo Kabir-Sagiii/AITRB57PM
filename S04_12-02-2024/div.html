@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div in React</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <script>
+      var divRef = React.createElement(
+        "div",
+        null,
+        "This is myFirst Div using React"
+      );
+
+      ReactDOM.render(divRef, document.querySelector("body"));
+    </script>
+  </body>
+</html>

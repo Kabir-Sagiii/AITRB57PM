@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      #box {
+        width: 800px;
+        /* box-shadow: 0 0 10px red; */
+        padding: 30px;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function MyContainer(props) {
+        //properties = { title:"React JS"}  //  properties.title
+
+        // React Functional Component
+        return (
+          <div id="box">
+            <img src={props.image} width="500" height="200" />
+            <details>
+              <summary> {props.title}</summary>
+              <h3> {props.title} </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                ut mollitia blanditiis quia nostrum illo. Eveniet reprehenderit,
+                rem repudiandae nostrum minima similique illo corrupti,
+                cupiditate illum non repellat dignissimos architecto delectus
+                inventore commodi saepe minus a natus sint nisi! Mollitia.
+              </p>
+              <button>Details</button>
+            </details>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <MyContainer
+              title="React JS"
+              image="https://miro.medium.com/max/1280/1*vHHBwcUFUaHWXntSnqKdCA.png"
+            />
+
+            <MyContainer
+              title="Angular 17"
+              image="https://www.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular.png"
+            />
+
+            <MyContainer
+              title="Node JS"
+              image="https://miro.medium.com/v2/resize:fit:600/1*AJTB4eViV7eQeOC9uUGABw.png"
+            />
+
+            <MyContainer
+              title="Spring Boot"
+              image="https://blog.betrybe.com/wp-content/uploads/2021/06/spring-boot.jpg"
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Main />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

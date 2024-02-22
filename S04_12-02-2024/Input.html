@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Input Element in React Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <script>
+      var InputRef = React.createElement("input", {
+        type: "number",
+        placeholder: "Enter Password",
+      });
+
+      ReactDOM.render(InputRef, document.querySelector("body"));
+    </script>
+  </body>
+</html>

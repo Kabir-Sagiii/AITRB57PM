@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var container = (
+        <div style={{ backgroundColor: "green", padding: "15px" }}>
+          <h2
+            style={{ color: "red", backgroundColor: "black", padding: "30px" }}
+          >
+            React JSX
+          </h2>
+          <p style={{ color: "white" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            ducimus, voluptatibus repudiandae nobis quaerat voluptatum dicta nam
+            tenetur minima laborum quibusdam dolore quas! Inventore molestias
+            delectus fuga quisquam eveniet iusto! Sunt at ratione quam voluptate
+            voluptates repellendus voluptatum doloribus? Similique quisquam
+            dolores numquam minus sapiente. Voluptate aliquam pariatur eligendi!
+            Odio.
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

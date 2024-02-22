@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      body,
+      h2 {
+        margin: 0;
+      }
+      #container {
+        background-color: black;
+        height: 70px;
+        display: flex;
+      }
+      .leftPanel {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightPanel {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function NavBar() {
+        return (
+          <div id="container">
+            <div class="leftPanel">
+              <h2 style={{ color: "white" }}> MyMart App </h2>
+            </div>
+
+            <div class="rightPanel">
+              <a href="">Home</a>
+              <a href="">Profile</a>
+              <a href="">Products</a>
+              <a href="">Cart</a>
+              <a href="">Login</a>
+            </div>
+          </div>
+        );
+      }
+
+      function MultipleNavbar() {
+        return (
+          <div>
+            <NavBar />
+            <NavBar />
+            <NavBar />
+            <NavBar />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleNavbar />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

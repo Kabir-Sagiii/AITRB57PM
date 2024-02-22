@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card {
+        box-shadow: 0 0 10px black;
+        width: 270px;
+        height: 390px;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+    <title>React Card</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(image, name) {
+        return (
+          <div class="card">
+            <img src={image} width="100%" height="200" />
+            <h3>{name} </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              inventore labore atque voluptates molestias id non amet officia
+              repudiandae laboriosam!
+            </p>
+            <button>Profile</button>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <div class="container">
+          {createCard(
+            "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg",
+            "Raj Verma"
+          )}
+          {createCard(
+            "https://i.pinimg.com/originals/c7/6b/3f/c76b3f38a6b60c338d6534b4eacc9af2.jpg",
+            "Sneha Reddy"
+          )}
+          {createCard(
+            "https://cdn9.dissolve.com/p/D430_49_193/D430_49_193_1200.jpg",
+            "Rohit Jaiswal"
+          )}
+          {createCard(
+            "https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/professional_headshots_tampa_011.jpg",
+            "Kajal Patil"
+          )}
+        </div>,
+        document.getElementById("root")
+      );
+
+      //   ReactDOM.render(createCard(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var container = React.createElement(
+        "div",
+        {
+          id: "container",
+          style: {
+            backgroundColor: "coral",
+            padding: "35px",
+          },
+        },
+        React.createElement(
+          "div",
+          {
+            id: "subContainer",
+            style: {
+              backgroundColor: "green",
+              padding: "30px",
+            },
+          },
+          React.createElement(
+            "h3",
+            {
+              style: {
+                color: "red",
+                backgroundColor: "black",
+                padding: "20px",
+              },
+            },
+            "React is Library"
+          )
+        )
+      ); // <div> <div><h3> ---- </h3></div></div>
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>
