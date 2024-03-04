@@ -1,0 +1,14 @@
+#flexContainer {
+  width: 800px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  margin: 100px auto;
+  display: flex;
+}
+.left {
+  width: 35%;
+}
+.right {
+  width: 65%;
+  padding: 30px;
+}
