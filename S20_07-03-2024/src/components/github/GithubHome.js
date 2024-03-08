@@ -12,7 +12,7 @@ function GithubHome() {
 
       <div className="row2">
         <div className="row2-col1">
-          <input type="text" placeholder="Github Username" size={60} />
+          <input type="text" placeholder="Github Username" size={70} />
         </div>
 
         <div className="row2-col2">
