@@ -1,0 +1,7 @@
+useEffect() and Lifecyle 
+----------------------------
+https://drive.google.com/drive/folders/1zqesi-2_XSs-oZTcH5_IQvzdpdgGnCH8?usp=sharing
+
+useParams,useSearchParams, useNavigate, Protected Routes
+---------------------------------------------------------
+https://drive.google.com/file/d/1Chc8pQev2HhFJSpEIhCcAjj8IRS2Es1w/view?usp=sharing
