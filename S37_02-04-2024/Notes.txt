@@ -1,0 +1,45 @@
+All Product API
+----------------
+https://fakestoreapi.com/products
+
+Specific Product API
+---------------------
+https://fakestoreapi.com/products/<id>
+
+Jewelery API
+-------------
+https://fakestoreapi.com/products/category/jewelery
+
+Electronics API
+------------------
+https://fakestoreapi.com/products/category/electronics
+
+Mens Clothing
+---------------
+https://fakestoreapi.com/products/category/men's clothing
+
+
+Womens Clothing
+---------------
+https://fakestoreapi.com/products/category/women's clothing
+
+
+JSON Server
+------------
+https://www.npmjs.com/package/jsonserver
+
+Get
+-----
+http://localhost:5000/results
+
+post 
+-----
+http://localhost:5000/results
+
+delete
+-----
+http://localhost:5000/results/<id>
+
+put 
+-----
+http://localhost:5000/results/<id>

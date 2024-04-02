@@ -1,0 +1,36 @@
+.Home {
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  column-gap: 20px;
+}
+.gender {
+  text-align: center;
+}
+.Details {
+  box-shadow: 0 0 10px blue;
+  padding: 20px;
+  text-align: center;
+}
+.Details h2 {
+  color: blue;
+}
+.table {
+  width: 100%;
+}
+.btn {
+  background-color: none;
+  border: 2px solid green;
+  color: green;
+  font-weight: bolder;
+  padding: 8px 24px;
+}
+.update-btn {
+  background-color: none;
+  border: 2px solid blue;
+  color: blue;
+  font-weight: bolder;
+  padding: 8px 24px;
+}
